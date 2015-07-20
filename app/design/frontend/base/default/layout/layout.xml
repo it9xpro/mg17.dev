@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+* local.xml
+* Local layout modifications for our local theme
+* @category design
+* @package bookstore
+* @copyright Copyright (c) 2013 Andrea Saccà.
+*/
+-->
+<layout version="0.1.0">
+    <default>
+    </default>
+</layout>

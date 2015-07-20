@@ -1,0 +1,44 @@
+<!-- TOPBAR -->
+<div id="topbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <?php echo $this->getChildHtml('topbar_cmslinks') ?>
+            </div>
+            <div class="user-links col-md-4">
+                <span class="welcome pull-left">
+                    <?php echo $this->getLayout()->getBlock('header')->getWelcome(); ?>
+                </span>
+                <ul class="list-inline pull-left">
+                <?php if($this->helper('customer')->isLoggedIn()): ?>
+                    <li>
+                        <a title="<?php echo $this->__('My Account'); ?>" href="<?php echo $this->getUrl('customer/account') ?>"/>
+                        <?php echo $this->__('My account'); ?>
+                        </a>
+                    </li>
+                    <li>
+                        <a title="log Out" href="<?php echo $this->getUrl('customer/account/logout'); ?>"
+                           <?php echo $this->__('Logout'); ?>
+                    </li>
+                <?php else: ?>
+                    <li><a href="<?php echo $this->getUrl('customer/account/login/'); ?>"><?php echo $this->__('Login') ?></a></li>
+                    <li><a href="<?php echo $this->getUrl('customer/account/create'); ?>"><?php echo $this->__('Create Account'); ?></a> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- HEADER -->
+<div id="header">
+    <div class="container">
+        <div class="row">
+
+        </div>
+    </div>
+</div>
+
+<!-- NAV -->
+<nav>
+
+</nav>

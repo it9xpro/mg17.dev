@@ -1,4 +1,7 @@
 <?php
+if (isset($_SERVER['MAGE_IS_DEVELOPER_MODE'])) {
+    Mage::setIsDeveloperMode(true);
+}
 /**
  * Magento
  *
