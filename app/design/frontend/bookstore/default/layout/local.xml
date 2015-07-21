@@ -57,7 +57,16 @@
                     <block_id>topbar_cmslinks</block_id>
                 </action>
             </block>
+
+            <block type="checkout/cart_sidebar" name="top_cart" template="checkout/cart/topcart.phtml" before="-">
+                <action method="addItemRender"><type>simple</type>
+                    <block>checkout/cart_item_renderer</block><template>checkout/cart/sidebar/default.phtml</template>
+                </action>
+            </block>
+
         </reference>
+
+
 
     </default>
 </layout>
