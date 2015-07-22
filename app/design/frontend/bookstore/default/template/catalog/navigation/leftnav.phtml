@@ -1,0 +1,15 @@
+<div class="block block-leftnav">
+    <div class="block-titles">
+        <strong><?php echo $this->__('Browse Category'); ?></strong>
+    </div>
+
+    <div class="block-content">
+        <ul>
+            <?php foreach($this->getStoreCategories() as $_categories): ?>
+                <?php if($_categories->name !=""): ?>
+                    <?php echo $this->drawItem($_categories); ?>
+                <?php endif; ?>
+            <?php endforeach ?>
+        </ul>
+    </div>
+</div>
