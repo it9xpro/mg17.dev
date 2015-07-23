@@ -104,7 +104,10 @@
             <block type="core/text_list" name="slider" as="slider" translate="label">
                 <label>Slider Block</label>
             </block>
+
         </reference>
+
+
 
         <reference name="slider">
             <block type="cms/block" name="home-fullwidth" as="home-fullwidth">
@@ -114,6 +117,16 @@
             </block>
         </reference>
 
-
     </default>
+
+    <catalog_category_layered translate="label">
+        <reference name="right">
+            <block type="catalog/layer_view" name="catalog.leftnav" after="currency" template="catalog/layer/view.phtml" before="-"/>
+        </reference>
+        <reference name="root">
+            <action method="setTemplate">
+                <template>page/2columns-right.phtml</template>
+            </action>
+        </reference>
+    </catalog_category_layered>
 </layout>

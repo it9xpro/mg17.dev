@@ -41,7 +41,77 @@
     font-style: italic
 }
 #header .block-topcart .block-content {
-    display: none
+    background:none repeat scroll 0 0 #FFF;
+    border-top: 3px solid #FA9221;
+    box-shadow: 0 0 3px rgba(0,0,0,0.28);
+    padding: 15px;
+    position: absolute;
+    width: 100%;;
+    z-index: 0;
+    transition: all .5s;
+    -moz-transition: all .5s ;
+    -webkit-transition: all .5s;
+    opacity: 0;
+    top: 105px;
+    visibility: hidden;
+}
+#header .block-topcart:hover .block-content {
+    opacity: 1;
+    top: 65px;
+    z-index: 999;
+    visibility: visible;
+}
+#header .block-topcart .block-subtitle {
+}
+#header .block-topcart ol {
+    list-style-type:none;
+    padding:0;
+    overflow:hidden;
+}
+#header .block-topcart ol li {
+    width:100%;
+    float:left;
+    clear:both;
+    position:relative;
+    margin-bottom:10px;
+}
+#header .block-topcart ol li a.product-image {
+    display:block;
+    float:left;
+    width:25%;
+}
+#header .block-topcart ol li .product-details {
+    float:left;
+    width:65%;
+}
+#header .block-topcart .product-details .product-name {
+    margin:0;
+}
+#header .block-topcart .product-details .product-name a {
+    font-weight:700;
+    font-size:12px;
+}
+#header .block-topcart a.btn-edit,#header .block-topcart a.btn-remove
+{
+    position:absolute;
+    right:0;
+    top:0;
+    display:block;
+    text-indent:-99999px;
+    height:15px;
+    width:15px;
+}
+#header .block-topcart a.btn-edit {
+    background:url(../images/btn_edit.gif) no-repeat center center;
+}
+#header .block-topcart a.btn-remove {
+    background:url(../images/btn_gm-close.gif) no-repeat center center;
+    top:20px;
+}
+#header .block-topcart ol li .product-details {
+}
+#header .block-topcart .actions {
+    clear:both;
 }
 
 /* navbar */
@@ -232,4 +302,34 @@
 }
 .block-leftnav .block-content ul ul ul a{
     color: #999;
+}
+
+
+/* Product List */
+/* Product List */
+.products-grid {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.products-grid li.item {
+    margin-bottom: 30px;
+}
+.products-grid .product-name {
+    font-size:14px;
+    min-height:30px;
+    margin:0;
+}
+.products-grid .panel-footer {
+    overflow:hidden;
+}
+.product-name a {
+    color:#333;
+}
+.price-box p {
+    margin:0;
+}
+.products-grid .product-image {
+    margin-bottom:10px;
+    display:block;
 }
